@@ -13,4 +13,4 @@
 
 
 [进入后台](http://nps.xs-box.com/nps)
-[开始使用](#xbox - NPS)
+[开始使用](#nps)

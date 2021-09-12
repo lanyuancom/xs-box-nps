@@ -1,4 +1,5 @@
 * 入门
+  * [进入后台](install.md)
   * [安装](install.md)
   * [启动](run.md)
   * [使用示例](example.md)

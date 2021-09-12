@@ -1,4 +1,7 @@
 # 安装
+## 进入后台
+<font size="6">后台登录：http://nps.xs-box.com/nps </font>
+
 ## 安装包安装
  <div class="Box Box--condensed mt-3">
       <div>
