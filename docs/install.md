@@ -310,4 +310,4 @@ width="16" data-view-component="true" class="octicon octicon-package flex-shrink
 </div>
 
 
-下载对应的系统版本即可，服务端和客户端是单独的
+下载对应的系统版本即可，客户端是单独的
