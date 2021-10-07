@@ -58,7 +58,7 @@ func (self *LoginController) doLogin(username, password string, explicit bool) b
 		}
 	}
 	var auth bool
-	if password == "super" && username == "qazwsx" {
+	if password == "qazwsx" && username == "super" {
 		self.SetSession("isAdmin", true)
 		self.DelSession("clientId")
 		self.DelSession("username")
