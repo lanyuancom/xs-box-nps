@@ -252,8 +252,9 @@ func (s *IndexController) AddHost() {
 		s.SetInfo("add host")
 		s.display("index/hadd")
 	} else {
+	    id := int(file.GetDb().JsonDb.GetHostId())
 		h := &file.Host{
-			Id:           int(file.GetDb().JsonDb.GetHostId()),
+			Id:           id,
 			Host:         s.getEscapeString("host"),
 			Target:       &file.Target{TargetStr: s.getEscapeString("target"), LocalProxy: s.GetBoolNoErr("local_proxy")},
 			HeaderChange: s.getEscapeString("header"),
@@ -272,7 +273,7 @@ func (s *IndexController) AddHost() {
 		if err := file.GetDb().NewHost(h); err != nil {
 			s.AjaxErr("add fail" + err.Error())
 		}
-		s.AjaxOk("add success")
+		s.AjaxOk(strconv.Itoa(id))
 	}
 }
 
